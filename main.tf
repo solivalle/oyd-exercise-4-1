@@ -1,7 +1,7 @@
 module "photos" {
   source = "./modules/log-archive"
 
-  bucket_name            = "acme-photos-${var.environment}"
+  bucket_name            = "acme-photos-${var.environment}-unique"
   environment            = var.environment
   lifecycle_ia_days      = 30
   lifecycle_glacier_days = 90
